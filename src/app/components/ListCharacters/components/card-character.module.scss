@@ -1,0 +1,21 @@
+
+$border-radius-card: 1.5rem;
+
+.cardCharacter{
+    width: 15rem;
+    background-color: #373737;
+    border-radius: $border-radius-card;
+
+    img{
+        border-radius: $border-radius-card; 
+    }
+}
+
+.cardFooter{
+    border-bottom-left-radius: $border-radius-card !important;
+    border-bottom-right-radius: $border-radius-card !important;
+
+    .numberChapters{
+        border-bottom-left-radius: $border-radius-card !important;
+    }
+}

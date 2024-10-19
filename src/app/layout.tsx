@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.scss";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Hind_Madurai } from 'next/font/google'
 
 const HindMadurai = Hind_Madurai({
