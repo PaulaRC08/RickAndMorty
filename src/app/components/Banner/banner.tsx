@@ -1,9 +1,50 @@
+'use client';
+import {} from 'react'
+import Image from 'next/image'
+import styles from './banner.module.scss'
+import ObjectFloating from './components/objectFloating'
 
 export default function MyBanner() {
     return (
-      <div >
-        <p>Banner</p>
-      </div>
+      <>
+       <ObjectFloating
+          top={true}
+          classPosition={'objectTopLeft'}
+          srcImage={'/images/banner/plumbus.svg'}
+          size={80} 
+          altImage={'Object Plumbus to Rick and Morty'}/>
+        <ObjectFloating
+          top={true}
+          classPosition={'objectTopRigth'}
+          srcImage={'/images/banner/casco.svg'}
+          size={110} 
+          altImage={'Object helmet to Rick and Morty'}/>
+        <div className={`${styles.bannerImage} rounded-3 my-4 py-5`}>
+          <div className='d-flex flex-column align-items-center'>
+            <Image
+              src="/images/banner/RickMortyLogoColor.png"
+              width={450}
+              height={150}
+              alt="Main characters logo"
+              layout="responsive"
+            />
+            <hr className={`${styles.hrDivider} border border-white border-2`}/>
+            <p className='text-center mx-2'>Sigue las aventuras de un científico alcohólico, Rick, y su nieto Morty, mientras viajan a través de dimensiones, enfrentando situaciones absurdas y peligrosas</p>
+          </div>
+        </div>
+        <ObjectFloating
+          top={false}
+          classPosition={'objectBottomLeft'}
+          srcImage={'/images/banner/megasemillas.svg'}
+          size={100} 
+          altImage={'Object Mega seeds to Rick and Morty'}/>
+        <ObjectFloating
+          top={false}
+          classPosition={'objectBottomRigth'}
+          srcImage={'/images/banner/cajamesseks.svg'}
+          size={100} 
+          altImage={'Object Box Messeks seeds to Rick and Morty'}/>
+      </>
     );
 }
   

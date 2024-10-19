@@ -9,8 +9,10 @@ export default function Home() {
     <div >
       <MyNavbar/>
       <MyBanner/>
+      <div className="container">
+        <ListCharacters/>
+      </div>
       <MyFooter/>
-      <ListCharacters/>
     </div>
   );
 }

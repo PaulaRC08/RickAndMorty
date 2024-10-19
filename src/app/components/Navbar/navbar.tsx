@@ -5,7 +5,7 @@ import { Navbar } from 'react-bootstrap';
 export default function MyNavbar() {
     return (
       <>
-        <Navbar bg="dark" data-bs-theme="dark" sticky="top">
+        <Navbar bg="dark" className='bg-gray-700' sticky="top">
           <div className='d-flex justify-content-start mx-3'>
             <Image
                 src="/images/navbar/rickymortyLogo.png"
