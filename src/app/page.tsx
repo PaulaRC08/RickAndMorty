@@ -1,8 +1,16 @@
-import Image from "next/image";
+import MyBanner from "./components/Banner/banner";
+import MyFooter from "./components/Footer/footer";
+import ListCharacters from "./components/ListCharacters/list-characters";
+import MyNavbar from "./components/Navbar/navbar";
+
 
 export default function Home() {
   return (
     <div >
+      <MyNavbar/>
+      <MyBanner/>
+      <MyFooter/>
+      <ListCharacters/>
     </div>
   );
 }
