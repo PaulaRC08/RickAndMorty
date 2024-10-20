@@ -5,6 +5,7 @@ import CardCharacter from "./components/card-character";
 import Lottie from 'react-lottie';
 import animationData from './../../../../public/images/list-characters/AnimationRick.json';
 import { Alert, Button, Spinner } from 'react-bootstrap';
+import { Character } from '@/app/core/models/character';
 
 export default function ListCharacters() {
 

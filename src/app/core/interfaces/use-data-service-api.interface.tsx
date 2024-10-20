@@ -1,15 +1,15 @@
-interface IState {
+export interface IState {
     loading: boolean;
     data: any | null;
     error: string | null;
 }
 
-interface IAction {
+export interface IAction {
     type: string;
     payload?: any | null;
 }
 
-interface ILocation{
+export interface ILocation{
     name: string;
     //url: string;
 }

@@ -4,6 +4,7 @@ import { Card } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import styles from './card-character.module.scss'
 import { getGenderIcon, getStatusIcon } from '@/app/core/utils/globals';
+import { Character } from '@/app/core/models/character';
 
 const CardCharacter = (props: {
     character: Character
@@ -19,6 +20,7 @@ const CardCharacter = (props: {
                     src={props.character.image}
                     className='mb-2'
                     fluid
+                    alt={`Image to ${props.character.name}`}
                 />
                 <Card.Title>{props.character.name}</Card.Title>
                 <div className='d-flex justify-content-start'>

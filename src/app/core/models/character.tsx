@@ -1,4 +1,6 @@
-class Character {
+import { ILocation } from "../interfaces/use-data-service-api.interface";
+
+export class Character {
     id: number;
     name: string;
     status: string;
