@@ -51,7 +51,7 @@ export default function ListCharacters() {
             </Alert>
         }
 
-        <div className='d-flex flex-wrap justify-content-center justify-content-lg-between mt-5'>
+        <div className='d-flex flex-wrap justify-content-center justify-content-lg-around mt-5'>
           {data && data.map((character: Character, index: number) => (
             <CardCharacter
             key={`Character-${index}`}
