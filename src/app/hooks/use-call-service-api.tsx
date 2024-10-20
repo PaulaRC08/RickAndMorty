@@ -1,13 +1,13 @@
 import { useEffect, useReducer } from "react";
 import { RickMortyApi } from "../core/api/rick-morty-api";
 
-const initialState : State = {
+const initialState : IState = {
     loading: false,
     data: null,
     error: null,
 };
 
-const reducer = (state : State, action : Action): State => {
+const reducer = (state : IState, action : IAction): IState => {
     switch (action.type) {
         case 'Loading':
             return {loading: true, data: null, error: null};
@@ -20,7 +20,7 @@ const reducer = (state : State, action : Action): State => {
     }
   }
 
-  const useCallServiceApi = () => {
+  const useCallServiceApi = (url: string) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     useEffect(() => {
@@ -28,7 +28,8 @@ const reducer = (state : State, action : Action): State => {
             dispatch({ type: 'Loading' });
 
             try {
-                const { data } = await RickMortyApi.get('/character');
+                const response = await RickMortyApi.get(url);
+                const data : Character[]  = response.data.results;
                 console.log(data);
                 dispatch({ type: 'Success', payload: data });
             } catch (error : any) {
