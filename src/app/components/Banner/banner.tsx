@@ -7,20 +7,21 @@ import ObjectFloating from './components/objectFloating'
 export default function MyBanner() {
     return (
       <>
-       <ObjectFloating
-          top={true}
-          classPosition={'objectTopLeft'}
-          srcImage={'/images/banner/plumbus.svg'}
-          size={80} 
-          altImage={'Object Plumbus to Rick and Morty'}/>
-        <ObjectFloating
-          top={true}
-          classPosition={'objectTopRigth'}
-          srcImage={'/images/banner/casco.svg'}
-          size={110} 
-          altImage={'Object helmet to Rick and Morty'}/>
-        <div className={`${styles.bannerImage} rounded-3 my-4 py-5`}>
-          <div className='d-flex flex-column align-items-center'>
+
+        <div className={`${styles.bannerImage} rounded-3 mb-4 pb-5 pt-3`}>
+          <ObjectFloating
+            top={true}
+            classPosition={'objectTopLeft'}
+            srcImage={'/images/banner/plumbus.svg'}
+            size={80} 
+            altImage={'Object Plumbus to Rick and Morty'}/>
+          <ObjectFloating
+            top={true}
+            classPosition={'objectTopRigth'}
+            srcImage={'/images/banner/casco.svg'}
+            size={110} 
+            altImage={'Object helmet to Rick and Morty'}/>
+          <div className='d-flex flex-column align-items-center mt-3'>
             <Image
               src="/images/banner/RickMortyLogoColor.png"
               width={450}

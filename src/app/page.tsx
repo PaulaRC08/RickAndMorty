@@ -8,9 +8,11 @@ export default function Home() {
   return (
     <div >
       <MyNavbar/>
-      <MyBanner/>
-      <div className="container">
-        <ListCharacters/>
+      <div style={{minHeight: 'calc(100vh - 100px)'}}>
+        <MyBanner/>
+        <div className="container">
+          <ListCharacters/>
+        </div>
       </div>
       <MyFooter/>
     </div>

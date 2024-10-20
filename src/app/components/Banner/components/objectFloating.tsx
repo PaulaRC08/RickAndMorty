@@ -11,7 +11,7 @@ const ObjectFloating = (props: {
         size: number
     }) => {
     return (
-        <div className={`container ${props.top ? 'mb-5 mb-md-4 mt-1' : 'mt-5 mt-md-4'}`}>
+        <div className={`container ${props.top ? 'mb-5 mb-md-4 pb-2' : 'mt-5 mt-md-4'}`}>
           <div className="position-relative">
             <div className={`${styles[props.classPosition]} position-absolute`}>
               <Image
