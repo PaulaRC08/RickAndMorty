@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image'
-import { Navbar } from 'react-bootstrap';
 
 export default function MyFooter() {
     return (

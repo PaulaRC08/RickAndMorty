@@ -1,7 +1,8 @@
 import { useEffect, useReducer } from "react";
-import { RickMortyApi } from "../core/api/rick-morty-api";
+//import { RickMortyApi } from "../core/api/rick-morty-api";
 import { gql } from "@apollo/client";
 import createApolloClient from "../core/api/rick-morty-graphql";
+import { IAction, IState } from "../core/interfaces/use-data-service-api.interface";
 
 const initialState : IState = {
     loading: true,
