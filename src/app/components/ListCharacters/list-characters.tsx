@@ -1,14 +1,21 @@
 'use client';
-import React from 'react'
+import React, { useState } from 'react'
 import useCallServiceApi  from "./../../hooks/use-call-service-api";
 import CardCharacter from "./components/card-character";
 import Lottie from 'react-lottie';
 import animationData from './../../../../public/images/list-characters/AnimationRick.json';
-import { Alert, Spinner } from 'react-bootstrap';
+import { Alert, Button, Spinner } from 'react-bootstrap';
 
 export default function ListCharacters() {
 
     const { loading, data, error } = useCallServiceApi('/character');
+
+    const [visibleItems, setVisibleItems] = useState(10);
+    const onClickSeeMore = () => {
+      setVisibleItems((prevVisibleItems) => 
+        prevVisibleItems + 5
+      );
+    };
 
     const defaultOptions = {
       loop: true,
@@ -52,12 +59,22 @@ export default function ListCharacters() {
         }
 
         <div className='d-flex flex-wrap justify-content-center justify-content-lg-around mt-5'>
-          {data && data.map((character: Character, index: number) => (
+          {data && data.slice(0, visibleItems).map((character: Character, index: number) => (
             <CardCharacter
             key={`Character-${index}`}
             character={character}/>
           ))}
         </div>
+
+
+        {data && visibleItems < data.length && (
+          <div className='d-flex justify-content-center my-4'>
+            <Button variant="light" size="lg" onClick={onClickSeeMore}>
+              SEE MORE
+              <i className="bi bi-arrow-down ms-2"></i>
+            </Button>
+          </div>
+        )}
 
       </>
     );
