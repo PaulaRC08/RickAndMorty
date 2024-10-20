@@ -1,0 +1,27 @@
+
+$border-radius-card: 1.5rem;
+
+.cardCharacter{
+    width: 15rem;
+    background-color: #373737;
+    border-radius: $border-radius-card;
+    transition: transform 0.3s ease-in-out;
+
+    img{
+        border-radius: $border-radius-card; 
+    }
+}
+
+.cardCharacter:hover {
+    transform: translateY(-10px);
+}
+
+.cardFooter{
+    border-bottom-left-radius: $border-radius-card !important;
+    border-bottom-right-radius: $border-radius-card !important;
+
+    .numberChapters{
+        min-width: 3rem;
+        border-bottom-left-radius: $border-radius-card !important;
+    }
+}

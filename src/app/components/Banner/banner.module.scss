@@ -1,0 +1,39 @@
+.bannerImage{
+    background-image: 
+        linear-gradient(90deg, rgba(43,43,43,0.9) 0%, rgba(43,43,43,0.75) 50%, rgba(43,43,43,0.9) 100%),
+        url('/images/banner/bannerBackgroud.jpg');
+    background-size: cover;
+    background-position: center;
+
+    img {
+        max-width: 450px;
+    }
+    p {
+        max-width: 500px;
+    }
+}
+
+.hrDivider{
+    width: 3rem;
+    opacity: 1;
+}
+
+.objectTopLeft{
+    top: 0px;
+    left: 40px;
+}
+
+.objectTopRigth{
+    top: -40px;
+    right: 20px;
+}
+
+.objectBottomLeft{
+    bottom: 0px;
+    left: 20px;
+}
+
+.objectBottomRigth{
+    bottom: 0px;
+    right: 45px;
+}

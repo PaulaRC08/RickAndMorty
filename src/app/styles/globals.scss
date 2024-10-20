@@ -1,0 +1,29 @@
+
+$dark-base: #272626;
+
+$theme-colors: (
+  'primary': #2B6E30,
+  'secondary': #1E5022,
+  'success': #198754,
+  'info': #3d9cad,
+  'warning': #f1c40f,
+  'danger': #e74c3c,
+  'light': #f9f9f9,
+  'dark': #1E1E1E,
+);
+
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+body{
+  background-color: $dark-base;
+  color: white;
+  
+}
+
+.btn{
+  transition: transform 0.3s ease-in-out;
+  
+  :hover {
+    transform: translateY(-4px);
+  }
+}
