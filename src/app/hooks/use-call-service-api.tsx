@@ -2,7 +2,7 @@ import { useEffect, useReducer } from "react";
 import { RickMortyApi } from "../core/api/rick-morty-api";
 
 const initialState : IState = {
-    loading: false,
+    loading: true,
     data: null,
     error: null,
 };

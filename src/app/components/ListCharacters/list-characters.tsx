@@ -53,7 +53,8 @@ export default function ListCharacters() {
         }
 
         {error && 
-            <Alert variant='warning'>
+            <Alert variant='danger'>
+              <span className='fw-bold'>ERROR: </span> 
               {error}
             </Alert>
         }

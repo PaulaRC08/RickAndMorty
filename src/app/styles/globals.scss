@@ -17,4 +17,13 @@ $theme-colors: (
 body{
   background-color: $dark-base;
   color: white;
+  
+}
+
+.btn{
+  transition: transform 0.3s ease-in-out;
+  
+  :hover {
+    transform: translateY(-4px);
+  }
 }

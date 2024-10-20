@@ -18,6 +18,7 @@ const ObjectFloating = (props: {
                 src={props.srcImage}
                 width={props.size}
                 height={props.size}
+                style={{height: 'auto'}}
                 alt={props.altImage}
               />
             </div>

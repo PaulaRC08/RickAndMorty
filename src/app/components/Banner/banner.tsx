@@ -8,7 +8,7 @@ export default function MyBanner() {
     return (
       <>
 
-        <div className={`${styles.bannerImage} rounded-3 mb-4 pb-5 pt-3`}>
+        <div className={`${styles.bannerImage} rounded-3 mb-5 pb-5 pt-3`}>
           <ObjectFloating
             top={true}
             classPosition={'objectTopLeft'}
@@ -30,14 +30,14 @@ export default function MyBanner() {
               layout="responsive"
             />
             <hr className={`${styles.hrDivider} border border-white border-2`}/>
-            <p className='text-center mx-2'>Follows the adventures of an alcoholic scientist, Rick, and his grandson Morty, as they travel through dimensions, facing absurd and dangerous situations.</p>
+            <p className='text-center mx-2 mb-4'>Follows the adventures of an alcoholic scientist, Rick, and his grandson Morty, as they travel through dimensions, facing absurd and dangerous situations.</p>
           </div>
         </div>
         <ObjectFloating
           top={false}
           classPosition={'objectBottomLeft'}
           srcImage={'/images/banner/megasemillas.svg'}
-          size={100} 
+          size={85} 
           altImage={'Object Mega seeds to Rick and Morty'}/>
         <ObjectFloating
           top={false}
