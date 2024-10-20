@@ -3,27 +3,27 @@ class Character {
     name: string;
     status: string;
     species: string;
-    type: string;
+    //type: string;
     gender: string;
-    origin: ILocation;
+    //origin: ILocation;
     location: ILocation;
     image: string;
-    episode: string[];
-    url: string;
-    created: string;
+    episode: number[];
+    //url: string;
+    //created: string;
 
     constructor(){
         this.id = 0;
         this.name = "";
         this.status = "";
         this.species = "";
-        this.type = "";
+        //this.type = "";
         this.gender = "";
-        this.origin = {name: "", url: ""};
-        this.location = {name: "", url: ""};
+        //this.origin = {name: "", url: ""};
+        this.location = {name: ""};
         this.image = "";
         this.episode = [];
-        this.url = "";
-        this.created = "";
+        //this.url = "";
+        //this.created = "";
     }
 }
