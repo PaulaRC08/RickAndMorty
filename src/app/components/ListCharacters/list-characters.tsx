@@ -4,7 +4,7 @@ export default function ListCharacters() {
     return (
       <>
         <div className="my-5">
-          <h1>CONOCE SUS PERSONAJES</h1>
+          <h1 className="pt-4">MEET THEIR CHARACTERS</h1>
         </div>
         <CardCharacter
           name={'Paula'} 

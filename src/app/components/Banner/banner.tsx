@@ -29,7 +29,7 @@ export default function MyBanner() {
               layout="responsive"
             />
             <hr className={`${styles.hrDivider} border border-white border-2`}/>
-            <p className='text-center mx-2'>Sigue las aventuras de un científico alcohólico, Rick, y su nieto Morty, mientras viajan a través de dimensiones, enfrentando situaciones absurdas y peligrosas</p>
+            <p className='text-center mx-2'>Follows the adventures of an alcoholic scientist, Rick, and his grandson Morty, as they travel through dimensions, facing absurd and dangerous situations.</p>
           </div>
         </div>
         <ObjectFloating
